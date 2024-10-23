@@ -1,0 +1,184 @@
+    body {
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .hero {
+        background-size: cover;
+        background-position: center;
+        background: url('bg.webp') center center/cover no-repeat;
+        background-size: cover;
+        /* Keeps the background fixed as the user scrolls */
+    }
+    
+    .dark .bg-white {
+        background-color: #2d3748;
+    }
+    
+    .dark .text-gray-800 {
+        color: #e2e8f0;
+    }
+    
+    #samp {
+        font-weight: bold;
+        color: blue;
+        size: 2px;
+    }
+    
+    #nav {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-right: 1.2rem;
+        color: black;
+        margin-left: 2rem;
+        display: flex;
+    }
+    
+    .vikash {
+        background: linear-gradient(120deg, #ca3b21, #e4cd3c, #352cb3, #209616);
+        /* Start and end colors */
+        margin-left: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 200%;
+        animation: fogAnimation 5s infinite alternate;
+    }
+    
+    @keyframes fogAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+    
+    .maurya {
+        background: linear-gradient(120deg, #f0ed42, #14023f, #e3367e, #209616);
+        /* Start and end colors */
+        font-size: 2rem;
+        font-weight: bold;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 200%;
+        animation: fogAnimation 5s infinite alternate;
+    }
+    
+    @keyframes fogAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+    
+    .dark .bg-white {
+        background-color: #2d3748;
+    }
+    
+    .dark .text-gray-800 {
+        color: #e2e8f0;
+    }
+    
+    @media (max-width: 768px) {
+        .about-card {
+            max-width: 90%;
+            padding: 15px;
+        }
+    }
+    
+    .about-card {
+        width: 70%;
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px grey;
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+        margin-left: 230px;
+        align-content: center;
+    }
+    
+    .about-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .skill-card {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px grey;
+        transition: transform 0.3s;
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .dark .skill-card {
+        background-color: #374151;
+        color: #e5e7eb;
+    }
+    
+    .skill-card:hover {
+        transform: scale(1.05);
+        color: #e3367e;
+    }
+    /*footer*/
+    
+    .footer .content {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1.5rem;
+        color: black;
+    }
+    
+    .footer .content p {
+        margin-bottom: 1.3rem;
+        color: black;
+    }
+    
+    .footer .content a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .footer .content a:hover {
+        border-bottom: 1px solid black;
+    }
+    
+    .footer .content h4 {
+        margin-bottom: 1.3rem;
+        font-size: 19px;
+    }
+    
+    footer {
+        text-align: center;
+        color: black;
+    }
+    
+    footer hr {}
+    
+    @media (max-width: 767px) {
+        .footer .content {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+        }
+        .footer {
+            position: unset;
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .footer .content,
+        .footer {
+            font-size: 14px;
+        }
+    }
+    
+    @media (orientation: landscape) and (max-height: 500px) {
+        .footer {
+            position: unset;
+        }
+    }
